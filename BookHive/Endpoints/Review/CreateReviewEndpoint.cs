@@ -2,6 +2,7 @@ using BookHive;
 using BookHive.DTO.Review.Request;
 using BookHive.DTO.Review.Response;
 using FastEndpoints;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookHive.Endpoints.Review;
@@ -13,6 +14,16 @@ public class CreateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
         
         Post("/books/{@BookId}/reviews");
         AllowAnonymous();
+    }
+    
+    public class CreateReviewDtoValidator : Validator<CreateReviewRequestDto>
+    {
+        public CreateReviewDtoValidator()
+        {
+            RuleFor(x => x.MemberId).GreaterThan(0);
+            RuleFor(x => x.Rating).InclusiveBetween(1, 5);
+            RuleFor(x => x.Comment).MaximumLength(1000);
+        }
     }
 
     public override async Task HandleAsync(CreateReviewRequestDto req, CancellationToken ct)
