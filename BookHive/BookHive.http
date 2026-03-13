@@ -1,0 +1,6 @@
+@BookHive_HostAddress = http://localhost:5002
+
+GET {{BookHive_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
