@@ -12,5 +12,5 @@ public class Author
     [Required] public DateOnly BirthDate { get; set; }
     [Required, MaxLength(60)] public string Nationality { get; set; }
     
-    public List<Book> Books { get; set; }
+    public List<Book>? Books { get; set; }
 }

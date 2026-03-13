@@ -17,6 +17,7 @@ public class CreateLoanEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<
     public override async Task HandleAsync(CreateLoanRequestDto req, CancellationToken ct)
     {
         BookHive.Models.Book? databaseBook = await bookHiveDbContext.Books.SingleOrDefaultAsync(x => x.Id == req.BookId, cancellationToken: ct);
+        BookHive.Models.Member? databaseMember = await bookHiveDbContext.Members.SingleOrDefaultAsync(x => x.Id == req.MemberId, cancellationToken: ct);
         
         BookHive.Models.Loan loan = new()
         {
@@ -30,8 +31,11 @@ public class CreateLoanEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<
 
         if (databaseBook != null)
         {
-            bookHiveDbContext.Add(loan);
-            await bookHiveDbContext.SaveChangesAsync(ct);
+            if (databaseMember.IsActive == true)
+            {
+                bookHiveDbContext.Add(loan);
+                await bookHiveDbContext.SaveChangesAsync(ct);
+            }
         }
 
 

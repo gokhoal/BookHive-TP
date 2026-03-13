@@ -18,8 +18,7 @@ public class CreateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
     public override async Task HandleAsync(CreateReviewRequestDto req, CancellationToken ct)
     {
         BookHive.Models.Book? databaseBook = await bookHiveDbContext.Books.SingleOrDefaultAsync(x => x.Id == req.BookId, cancellationToken: ct);
-        
-
+        BookHive.Models.Member? databaseMember = await bookHiveDbContext.Members.SingleOrDefaultAsync(x => x.Id == req.MemberId, cancellationToken: ct);
         
         BookHive.Models.Review review = new()
         {
@@ -32,10 +31,12 @@ public class CreateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
 
         if (databaseBook is null)
         {
-            bookHiveDbContext.Add(review);
-            await bookHiveDbContext.SaveChangesAsync(ct);
+            if (databaseMember.IsActive == true)
+            {
+                bookHiveDbContext.Add(review);
+                await bookHiveDbContext.SaveChangesAsync(ct);
+            }
         }
-
 
         GetReviewDetailsDto details = new()
         {
