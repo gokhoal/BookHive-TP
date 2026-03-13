@@ -7,11 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aa37047b-970c-4a30-8a8f-23f5ba1ff82d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/CreateAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/CreateAuthorEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/CreateBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/CreateBookEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Loan/CreateLoanEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Loan/CreateLoanEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Member/CreateMemberEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Member/CreateMemberEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Review/CreateReviewEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Review/CreateReviewEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/GetAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/GetAuthorEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/UpdateAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/UpdateAuthorEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetBookEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/UpdateBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/UpdateBookEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Loan/UpdateLoanEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Loan/UpdateLoanEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Member/UpdateMemberEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Member/UpdateMemberEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Review/UpdateReviewEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Review/UpdateReviewEndpoint.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +136,7 @@
       <updated>1773051323197</updated>
       <workItem from="1773051326413" duration="12506000" />
       <workItem from="1773125957108" duration="13458000" />
-      <workItem from="1773385159497" duration="10994000" />
+      <workItem from="1773385159497" duration="11745000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <option name="closed" value="true" />
@@ -168,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773390272895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Validator dse create">
+      <option name="closed" value="true" />
+      <created>1773397522676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773397522676</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +192,8 @@
     <MESSAGE value="correction des DTO" />
     <MESSAGE value="Etape 5 commit" />
     <MESSAGE value="Création d'un jeu de données dans le dbcontext" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création d'un jeu de données dans le dbcontext" />
+    <MESSAGE value="Validator dse create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validator dse create" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
