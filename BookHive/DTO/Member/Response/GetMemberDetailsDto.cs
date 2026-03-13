@@ -11,6 +11,6 @@ public class GetMemberDetailsDto
     public DateOnly MembershipDate { get; set; }
     public bool IsActive { get; set; }
     
-    public List<Navigation> Loans { get; set; }
-    public List<Navigation> Reviews { get; set; }
+    public List<Models.Loan> Loans { get; set; }
+    public List<Models.Review> Reviews { get; set; }
 }

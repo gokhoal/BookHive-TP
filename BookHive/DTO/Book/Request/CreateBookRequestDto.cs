@@ -12,10 +12,10 @@ public class CreateBookRequestDto
     public string Genre { get; set; }    
     public int AuthorId { get; set; }
     
-    public Navigation Author { get; set; }
+    public Models.Author Author { get; set; }
     
-    public List<Navigation> Loans { get; set; }
-    public List<Navigation> Reviews { get; set; }
+    public List<Models.Loan> Loans { get; set; }
+    public List<Models.Review> Reviews { get; set; }
     
 
 }

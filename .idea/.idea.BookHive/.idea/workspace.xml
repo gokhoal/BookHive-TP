@@ -5,7 +5,26 @@
     <projectFile profileName="https">BookHive/BookHive.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa37047b-970c-4a30-8a8f-23f5ba1ff82d" name="Changes" comment="" />
+    <list default="true" id="aa37047b-970c-4a30-8a8f-23f5ba1ff82d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BookHive/DTO/Loan/Response/GetLoanDetailsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/BookHive.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/BookHive.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Author/Request/CreateAuthorRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Author/Request/CreateAuthorRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Author/Request/UpdateAuthorRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Author/Request/UpdateAuthorRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Author/Response/GetAuthorDetailsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Author/Response/GetAuthorDetailsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Book/Request/CreateBookRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Book/Request/CreateBookRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Book/Request/UpdateBookRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Book/Request/UpdateBookRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Book/Response/GetBookDetailsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Book/Response/GetBookDetailsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Loan/Request/CreateLoanRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Loan/Request/CreateLoanRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Loan/Request/UpdateLoanRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Loan/Request/UpdateLoanRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Member/Request/CreateMemberRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Member/Request/CreateMemberRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Member/Request/UpdateMemberRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Member/Request/UpdateMemberRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Member/Response/GetMemberDetailsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Member/Response/GetMemberDetailsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Review/Request/CreateReviewRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Review/Request/CreateReviewRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Review/Request/UpdateReviewRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Review/Request/UpdateReviewRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Review/Response/GetReviewDetailsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Review/Response/GetReviewDetailsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/DeleteAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/DeleteAuthorEndpoint.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +33,24 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "gokhoal"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/gokhoal/BookHive-TP.git",
+    "accountId": "e8b2436c-23db-4891-8058-ddd5b4e62ad5"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/BookHive/BookHiveDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BookHive/DTO/Loan/Response/GetLoanDetailsDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Endpoints/Author/CreateAuthorEndpoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Endpoints/Author/GetAuthorEndpoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Endpoints/Author/UpdateAuthorEndpoint.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/BookHive/Models/Member.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Models/Review.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -54,17 +90,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.BookHive: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.BookHive: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/oistig@stsio.lan/RiderProjects/BookHive",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BookHive: http">
     <configuration name="BookHive: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BookHive/BookHive.csproj" />
@@ -108,16 +146,28 @@
       <updated>1773051323197</updated>
       <workItem from="1773051326413" duration="12506000" />
       <workItem from="1773125957108" duration="13458000" />
-      <workItem from="1773385159497" duration="1299000" />
+      <workItem from="1773385159497" duration="1968000" />
     </task>
+    <task id="LOCAL-00001" summary="first push">
+      <option name="closed" value="true" />
+      <created>1773386651020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773386651020</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="first push" />
+    <option name="LAST_COMMIT_MESSAGE" value="first push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

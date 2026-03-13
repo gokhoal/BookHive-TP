@@ -11,6 +11,6 @@ public class UpdateReviewRequestDto
     public string? Comment { get; set; }
     public DateTime CreatedAt { get; set; }
     
-    public Navigation Book { get; set; }
-    public Navigation Member { get; set; }
+    public Models.Book Book { get; set; }
+    public Models.Member Member { get; set; }
 }

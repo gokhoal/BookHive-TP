@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+namespace BookHive.DTO.Loan.Response;
 
-namespace BookHive.DTO.Loan.Request;
-
-public class UpdateLoanRequestDto
+public class GetLoanDetailsDto
 {
     public int Id { get; set; }
     public int? MemberId { get; set; }

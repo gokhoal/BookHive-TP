@@ -18,6 +18,7 @@ public class DeleteAuthorEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
     public override async Task HandleAsync(GetAuthorDto req, CancellationToken ct)
     {
         BookHive.Models.Author? databaseAuthor = await bookHiveDbContext.Authors.SingleOrDefaultAsync(x => x.Id == req.Id, cancellationToken: ct);     
+        BookHive.Models.Book? databaseBook = await bookHiveDbContext.Books.SingleOrDefaultAsync(x => x.Id == req.Id, cancellationToken: ct);     
         
         if (databaseAuthor == null)
         {
