@@ -15,15 +15,7 @@ public class GetAuthorEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<G
         Get ("/authors/{@Id}", x => new { x.Id });
     }
 
-    public class GetAuthorDtoValidator : Validator<GetAuthorDetailsDto>
-    {
-        public GetAuthorDtoValidator()
-        {
-            RuleFor(x => x.Id).GreaterThan(0);
-            RuleFor(x => x.FirstName).NotEmpty();
-            RuleFor(x => x.LastName).NotEmpty();
-        }
-    }
+
     
     public override async Task HandleAsync(GetAuthorDto req, CancellationToken ct)
     {

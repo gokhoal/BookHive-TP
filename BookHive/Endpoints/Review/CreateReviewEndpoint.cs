@@ -16,15 +16,7 @@ public class CreateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
         AllowAnonymous();
     }
     
-    public class CreateReviewDtoValidator : Validator<CreateReviewRequestDto>
-    {
-        public CreateReviewDtoValidator()
-        {
-            RuleFor(x => x.MemberId).GreaterThan(0);
-            RuleFor(x => x.Rating).InclusiveBetween(1, 5);
-            RuleFor(x => x.Comment).MaximumLength(1000);
-        }
-    }
+
 
     public override async Task HandleAsync(CreateReviewRequestDto req, CancellationToken ct)
     {

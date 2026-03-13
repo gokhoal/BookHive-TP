@@ -13,16 +13,6 @@ public class UpdateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
         Put("/reviews/{@Id}", x => new { x.Id });
         AllowAnonymous();
     }
-
-    public class UpdateReviewDtoValidator : Validator<UpdateReviewRequestDto>
-    {
-        public UpdateReviewDtoValidator()
-        {
-            RuleFor(x => x.MemberId).GreaterThan(0);
-            RuleFor(x => x.Rating).InclusiveBetween(1, 5);
-            RuleFor(x => x.Comment).MaximumLength(1000);
-        }
-    }
     
     public override async Task HandleAsync(UpdateReviewRequestDto req, CancellationToken ct)
     {
