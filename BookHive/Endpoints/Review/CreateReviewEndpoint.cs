@@ -31,7 +31,7 @@ public class CreateReviewEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoin
 
         if (databaseBook is null)
         {
-            if (databaseMember.IsActive == true)
+            if (databaseMember.IsActive)
             {
                 bookHiveDbContext.Add(review);
                 await bookHiveDbContext.SaveChangesAsync(ct);
