@@ -2,37 +2,18 @@ using BookHive;
 using BookHive.DTO.Book.Request;
 using BookHive.DTO.Book.Response;
 using FastEndpoints;
-using Microsoft.EntityFrameworkCore;
+using BookHive.Models;
 
 namespace Bookhive.Endpoints.Book;
 
-public class DeleteBookEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<GetBookDto, GetBookDetailsDto>
+public class DeleteBookEndpoint(BookHiveDbContext db, AutoMapper.IMapper mapper) : Endpoint<GetBookDto, GetBookDetailsDto>
 {
-    public override void Configure()
-    {
-        
-        Post("/books/{@id}");
-        AllowAnonymous();
-    }
-
 
     public override async Task HandleAsync(GetBookDto req, CancellationToken ct)
     {
-        BookHive.Models.Book? databaseBook = await bookHiveDbContext.Books.SingleOrDefaultAsync(x => x.Id == req.Id, cancellationToken: ct); 
-        BookHive.Models.Loan? databaseLoan = await bookHiveDbContext.Loans.SingleOrDefaultAsync(x => x.BookId == req.Id, cancellationToken: ct); 
-        
-        if (databaseBook == null)
-        {
-            await Send.NotFoundAsync(ct);
-            return;
-        }
-        
-        if (databaseLoan == null)
-        {
-            bookHiveDbContext.Books.Remove(databaseBook);
-            await bookHiveDbContext.SaveChangesAsync(ct);
-        }
-        
+        BookHive.Models.Book? book = mapper.Map<BookHive.Models.Book?>(req);
+        db.Books.Remove(book);
+        await db.SaveChangesAsync(ct);
         await Send.NoContentAsync(ct);
     }
 }

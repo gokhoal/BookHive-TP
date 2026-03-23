@@ -6,31 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bookhive.Endpoints.Author;
 
-public class DeleteAuthorEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<GetAuthorDto, GetAuthorDetailsDto>
+public class DeleteAuthorEndpoint(BookHiveDbContext db, AutoMapper.IMapper mapper) : Endpoint<GetAuthorDto, GetAuthorDetailsDto>
 {
-    public override void Configure()
-    {
-        Post("/authors/{@id}");
-        AllowAnonymous();
-    }
-    
+
     public override async Task HandleAsync(GetAuthorDto req, CancellationToken ct)
     {
-        BookHive.Models.Author? databaseAuthor = await bookHiveDbContext.Authors.SingleOrDefaultAsync(x => x.Id == req.Id, cancellationToken: ct);
-        
-        if (databaseAuthor == null)
-        {
-            await Send.NotFoundAsync(ct);
-            return;
-        }
-
-        if (databaseAuthor.Books is null)
-        {
-            bookHiveDbContext.Authors.Remove(databaseAuthor);
-            await bookHiveDbContext.SaveChangesAsync(ct);
-        }
-        
+        BookHive.Models.Author? author = mapper.Map<BookHive.Models.Author?>(req);
+        db.Authors.Remove(author);
+        await db.SaveChangesAsync(ct);
         await Send.NoContentAsync(ct);
-
     }
 }

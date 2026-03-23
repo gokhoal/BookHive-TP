@@ -6,30 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa37047b-970c-4a30-8a8f-23f5ba1ff82d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BookHive/Profiles/AuthorProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookHive/Profiles/BookProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookHive/Profiles/LoanProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookHive/Profiles/MemberProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookHive/Profiles/ReviewProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BookHive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/BookHive.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/BookHive.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Book/Request/GetBookDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Book/Request/GetBookDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Book/Response/GetBookDetailsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Book/Response/GetBookDetailsDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetBookEndpoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Models/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Models/Book.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Models/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Models/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/DTO/Review/Request/GetReviewDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/DTO/Review/Request/GetReviewDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/CreateAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/CreateAuthorEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Author/DeleteAuthorEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Author/DeleteAuthorEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/CreateBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/CreateBookEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/DeleteBookEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/DeleteBookEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetAllBooksEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Book/GetAllBooksEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Loan/CreateLoanEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Loan/CreateLoanEndpoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Endpoints/Loan/DeleteLoanEndpoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Endpoints/Loan/DeleteLoanEndpoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookHive/Models/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Models/Review.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/BookHive.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/BookHive.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/BookHive.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/BookHive.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/Debug/net8.0/BookHive.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookHive/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookHive/Profiles/LoanProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BookHive/Profiles/LoanProfile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +77,7 @@
     <setting file="file://$PROJECT_DIR$/BookHive/Profiles/AuthorProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Profiles/BookProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Profiles/LoanProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BookHive/Profiles/ReviewProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Validators/Author/CreateAuthorDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Validators/Author/GetAuthorDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BookHive/Validators/Author/UpdateAuthorDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -177,6 +166,7 @@
       <workItem from="1773738803923" duration="5153000" />
       <workItem from="1773745215704" duration="205000" />
       <workItem from="1773934073198" duration="3052000" />
+      <workItem from="1774272143112" duration="5213000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <option name="closed" value="true" />
@@ -234,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773398891299</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit plusieurs profiles">
+      <option name="closed" value="true" />
+      <created>1774272489705</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1774272489705</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +249,8 @@
     <MESSAGE value="Validator dse create" />
     <MESSAGE value="Validators Get et Update" />
     <MESSAGE value="Refonte de l'arborescence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refonte de l'arborescence" />
+    <MESSAGE value="commit plusieurs profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit plusieurs profiles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

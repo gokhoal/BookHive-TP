@@ -15,5 +15,6 @@ public class LoanProfile : Profile
             .ForMember(
                 dest => dest.Member,
                 opt => opt.MapFrom(src => $"{src.Member.FirstName} {src.Member.LastName}"));
+        CreateMap<CreateLoanRequestDto, Loan>();
     }
 }
