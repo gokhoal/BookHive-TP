@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookHive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee80e33cde0eeb78d069fd8bf72f98111519ec19")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookHive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookHive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

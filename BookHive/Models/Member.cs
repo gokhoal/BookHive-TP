@@ -11,7 +11,7 @@ public class Member
     [Required, MaxLength(100)] public string LastName {get; set;}
     [Required] public DateOnly MembershipDate {get; set;} 
     public bool IsActive {get; set;}
-    public List<Loan>? Loan { get; set; }
-    public List<Review>? Review { get; set; }
+    public List<Loan>? Loans { get; set; }
+    public List<Review>? Reviews { get; set; }
     
 }

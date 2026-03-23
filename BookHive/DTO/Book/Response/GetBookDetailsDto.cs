@@ -11,6 +11,10 @@ public class GetBookDetailsDto
     public int PageCount { get; set; }
     public DateOnly PublishedDate { get; set; }
     public string Genre { get; set; }
+    public string AuthorFullName { get; set; }
+    public int AverageRating { get; set; }
+    public int ReviewCount { get; set; }
+    
     public Models.Author Author { get; set; }
     
     public List<Models.Loan> Loans { get; set; }

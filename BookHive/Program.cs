@@ -28,6 +28,7 @@ builder.Services.AddDbContext<BookHiveDbContext>();
 
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddAutoMapper(cfg => { }, typeof(Program).Assembly);
 
 WebApplication app = builder.Build();
 app.UseAuthentication()

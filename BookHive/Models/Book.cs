@@ -15,7 +15,7 @@ public class Book
     
     public int AuthorId { get; set; }
     public Author? Author { get; set; }
-    public List<Loan>? Loan { get; set; }
-    public List<Review>? Review { get; set; }
+    public List<Loan>? Loans { get; set; }
+    public List<Review>? Reviews { get; set; }
     
 }

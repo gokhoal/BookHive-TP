@@ -35,6 +35,7 @@ public class GetBookEndpoint(BookHiveDbContext bookHiveDbContext) : Endpoint<Get
             PageCount = databaseBook.PageCount,
             PublishedDate = databaseBook.PublishedDate,
             Genre = databaseBook.Genre,
+            AuthorFullName = $"{databaseBook.Author.FirstName} {databaseBook.Author.LastName}",
             AuthorId = databaseBook.AuthorId,
         };
         
